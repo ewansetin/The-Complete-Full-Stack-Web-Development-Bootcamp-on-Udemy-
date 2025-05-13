@@ -1,0 +1,18 @@
+</main>
+
+<footer>
+  <!-- Step 4 - Add a dynamic year to the footer using JS. -->
+   <%#  other option %>
+   <p>Copyright © <%= new Date().getFullYear() %> </p>
+
+   <%if(locals.theYear) {%>
+    <p>Copyright © <%=theYear%></p>
+   <%}else{%>
+      <p>Copyright © </p>
+   <%}%>
+   <!-- const year = date.getFullYear(); -->
+
+</footer>
+</body>
+
+</html>
